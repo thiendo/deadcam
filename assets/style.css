@@ -1,0 +1,50 @@
+:root {
+  --bg: #0b0c0e;
+  --panel: #15171a;
+  --line: #262a2f;
+  --text: #e1dacb;
+  --muted: #9a958a;
+  --cream: #f4e6c4;
+  --amber: #f2b33d;
+  --rec: #e23b2e;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); }
+body { font: 500 17px/1.65 "Chakra Petch", system-ui, sans-serif; }
+a { color: var(--amber); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2 { font-family: "Lilita One", sans-serif; font-weight: 400; color: var(--cream); letter-spacing: .01em; }
+h1 { font-size: 2.1rem; line-height: 1.15; margin: 0 0 .4em; }
+h2 { font-size: 1.45rem; margin: 1.6em 0 .4em; }
+.wrap { max-width: 900px; margin: 0 auto; padding: 0 16px; }
+.top { position: sticky; top: 0; z-index: 5; background: rgba(11,12,14,.9); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 12px; height: 60px; }
+.brand { display: flex; align-items: center; gap: 10px; margin-right: auto; font: 400 1.5rem "Lilita One", sans-serif; color: var(--cream); }
+.brand:hover { text-decoration: none; }
+.brand img { width: 34px; height: 34px; border-radius: 8px; }
+.top nav { display: flex; gap: 18px; font-size: .95rem; }
+.top nav a { color: var(--muted); }
+.top nav a:hover { color: var(--text); text-decoration: none; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 26px; margin: 28px 0; }
+.meta { color: var(--muted); font: .9rem "Share Tech Mono", monospace; margin-top: -4px; }
+code { background: #22252a; padding: 1px 6px; border-radius: 5px; font: .9em "Share Tech Mono", monospace; overflow-wrap: anywhere; }
+ul { padding-left: 1.2em; }
+li { margin: .4em 0; }
+.table-scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .93rem; }
+th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+th { background: #1c1f23; color: var(--cream); }
+.vi { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
+.rec404 { font: 1.1rem "Share Tech Mono", monospace; letter-spacing: .1em; color: var(--muted); display: inline-flex; gap: 8px; align-items: center; }
+.rec404 b { width: 10px; height: 10px; border-radius: 50%; background: var(--rec); }
+footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; text-align: center; padding: 26px 16px 36px; }
+footer a { margin: 0 8px; color: var(--muted); }
+footer img { height: 22px; opacity: .75; display: block; margin: 0 auto 12px; }
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .top .wrap { height: 54px; }
+  .brand { font-size: 1.2rem; }
+  .top nav { gap: 12px; font-size: .85rem; }
+  h1 { font-size: 1.7rem; }
+  .card { padding: 18px; }
+}
