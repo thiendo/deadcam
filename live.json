@@ -1,0 +1,4 @@
+{
+ "_note": "Read by the game (scripts/app_update.gd). Raise min_version to force an update: e.g. \"1.0.3\" or {\"ios\": \"1.0.3\", \"android\": \"1.0.3\"}. Empty = no forced update.",
+ "min_version": ""
+}
